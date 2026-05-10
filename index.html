@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="George 的个人博客，记录 LLM 基础设施、推理系统、性能优化与工程思考。"
+    />
+    <title>George | LLM Infrastructure Blog</title>
+    <link rel="canonical" href="https://georgezhong10-cmyk.github.io/" />
+    <link rel="alternate" hreflang="en" href="./en/" />
+    <link rel="alternate" hreflang="zh-CN" href="./" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-hero">
+      <nav class="site-nav" aria-label="主导航">
+        <a class="brand" href="./" aria-label="George blog home">George</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          Menu
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="./#posts">文章</a>
+          <a href="./archive/">归档</a>
+          <a href="./#about">关于</a>
+          <a href="./docs/GITHUB_PAGES_GUIDE.zh-CN.html">部署指南</a>
+          <a class="lang-switch" href="./en/">English</a>
+        </div>
+      </nav>
+
+      <section class="hero-copy">
+        <p class="eyebrow">LLM Infrastructure · Inference Systems · Performance</p>
+        <h1>把复杂系统拆成可以理解、测量和优化的路径。</h1>
+        <p>
+          这里记录我对大模型推理基础设施、底层性能优化、工程工具和系统学习的观察。
+          写作目标很朴素：让快路径更清楚，让实验更可复现。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#posts">开始阅读</a>
+          <a class="button ghost" href="https://github.com/georgezhong10-cmyk">GitHub</a>
+        </div>
+      </section>
+    </header>
+
+    <main class="layout">
+      <section class="content" id="posts" aria-labelledby="posts-title">
+        <div class="section-heading">
+          <p class="eyebrow">Recent Notes</p>
+          <h2 id="posts-title">最新文章</h2>
+        </div>
+
+        <article class="post-card featured">
+          <a href="./posts/zh/hello-github-pages.html">
+            <span class="post-date">2026-05-10</span>
+            <h3>用 GitHub Pages 搭一个轻量个人技术博客</h3>
+            <p>
+              从仓库结构、双语页面、静态资源到发布设置，把一个可维护的个人博客搭起来。
+              不需要复杂框架，先让写作开始发生。
+            </p>
+          </a>
+          <div class="post-meta">
+            <span>GitHub Pages</span>
+            <span>Blogging</span>
+            <span>中文</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <a href="./posts/en/hello-github-pages.html">
+            <span class="post-date">May 10, 2026</span>
+            <h3>Build a small technical blog with GitHub Pages</h3>
+            <p>
+              A compact blueprint for a bilingual static blog: pages, assets, deployment settings,
+              and a writing-first structure.
+            </p>
+          </a>
+          <div class="post-meta">
+            <span>GitHub Pages</span>
+            <span>English</span>
+          </div>
+        </article>
+
+        <article class="post-card muted">
+          <a href="./archive/">
+            <span class="post-date">Archive</span>
+            <h3>更多文章正在路上</h3>
+            <p>
+              后续可以把推理系统、benchmark、profiling、CUDA/C++/Rust 实验整理成系列文章。
+            </p>
+          </a>
+        </article>
+      </section>
+
+      <aside class="sidebar" aria-label="侧边栏">
+        <section class="profile-card" id="about">
+          <img src="./assets/images/site-card.svg" alt="George blog illustration" />
+          <h2>George</h2>
+          <p>
+            关注 LLM 推理服务、系统性能、profiling 与可复现实验。相信好的工程笔记应该既诚实，
+            也能帮助别人少踩坑。
+          </p>
+        </section>
+
+        <section class="side-panel">
+          <h2>关注方向</h2>
+          <div class="tag-cloud">
+            <a href="./archive/">LLM Serving</a>
+            <a href="./archive/">Profiling</a>
+            <a href="./archive/">Benchmark</a>
+            <a href="./archive/">Systems</a>
+            <a href="./archive/">GitHub Pages</a>
+          </div>
+        </section>
+
+        <section class="side-panel quote">
+          <h2>写作原则</h2>
+          <p>Measure first. Keep abstractions honest. Make fast paths readable.</p>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 George. Built with GitHub Pages.</p>
+      <p><a href="./en/">English</a> · <a href="./docs/GITHUB_PAGES_GUIDE.zh-CN.html">部署指南</a></p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

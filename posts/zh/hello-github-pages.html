@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="用 GitHub Pages 搭建一个中英文个人技术博客的完整步骤。"
+    />
+    <title>用 GitHub Pages 搭一个轻量个人技术博客 | George</title>
+    <link rel="alternate" hreflang="en" href="../en/hello-github-pages.html" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body class="page-body">
+    <nav class="site-nav compact" aria-label="文章导航">
+      <a class="brand" href="../../">George</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        Menu
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="../../">首页</a>
+        <a href="../../archive/">归档</a>
+        <a class="lang-switch" href="../en/hello-github-pages.html">English</a>
+      </div>
+    </nav>
+
+    <main class="article-shell">
+      <article class="article">
+        <header class="article-header">
+          <p class="eyebrow">GitHub Pages</p>
+          <h1>用 GitHub Pages 搭一个轻量个人技术博客</h1>
+          <p class="article-meta">2026-05-10 · Blogging · Static Site</p>
+        </header>
+
+        <p>
+          一个个人博客不一定要从复杂框架开始。对技术写作来说，最重要的是结构清晰、发布稳定、
+          内容易维护。GitHub Pages 正好适合这个阶段：把 HTML、CSS、图片和文章推到仓库，
+          开启 Pages 后就可以访问。
+        </p>
+
+        <h2>这套博客包含什么</h2>
+        <p>
+          当前项目已经包含中文首页、英文首页、文章归档、中英文示例文章、样式文件、交互脚本和
+          GitHub Pages 部署指南。你可以直接替换个人介绍、GitHub 用户名、邮箱、文章标题和内容。
+        </p>
+
+        <h2>推荐仓库结构</h2>
+        <pre><code>.
+├── index.html
+├── en/
+├── archive/
+├── posts/
+├── assets/
+├── docs/
+├── _config.yml
+└── .nojekyll</code></pre>
+
+        <h2>发布步骤</h2>
+        <ol>
+          <li>在 GitHub 新建仓库，个人博客推荐命名为 <code>你的用户名.github.io</code>。</li>
+          <li>把本项目所有文件推送到仓库的 <code>main</code> 分支。</li>
+          <li>进入仓库的 <strong>Settings → Pages</strong>。</li>
+          <li>在 <strong>Build and deployment</strong> 中选择 <strong>Deploy from a branch</strong>。</li>
+          <li>Branch 选择 <code>main</code>，目录选择 <code>/root</code>，保存。</li>
+          <li>等待 GitHub 完成发布，访问 <code>https://你的用户名.github.io</code>。</li>
+        </ol>
+
+        <h2>后续怎么写新文章</h2>
+        <p>
+          复制这篇文章文件，改标题、日期、正文和语言切换链接；然后在首页和归档页加上新文章入口。
+          如果文章变多，可以进一步迁移到 Jekyll、Astro 或 Hugo，但前期保持简单会更有利于持续写作。
+        </p>
+
+        <div class="article-callout">
+          <strong>小建议：</strong>先写 3 到 5 篇高质量笔记，再考虑复杂分类、评论系统或自动构建。
+          博客最稀缺的不是框架，而是持续可读的内容。
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="../../">返回首页</a> · <a href="../../docs/GITHUB_PAGES_GUIDE.zh-CN.html">查看完整部署指南</a></p>
+    </footer>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

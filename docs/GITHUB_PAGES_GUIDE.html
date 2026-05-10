@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A bilingual GitHub Pages personal blog setup guide." />
+    <title>GitHub Pages Personal Blog Setup Guide | George</title>
+    <link rel="alternate" hreflang="zh-CN" href="./GITHUB_PAGES_GUIDE.zh-CN.html" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body class="page-body">
+    <nav class="site-nav compact" aria-label="Setup guide navigation">
+      <a class="brand" href="../en/">George</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        Menu
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="../en/">Home</a>
+        <a href="../archive/">Archive</a>
+        <a class="lang-switch" href="./GITHUB_PAGES_GUIDE.zh-CN.html">中文</a>
+      </div>
+    </nav>
+
+    <main class="article-shell">
+      <article class="article">
+        <header class="article-header">
+          <p class="eyebrow">Setup Guide</p>
+          <h1>GitHub Pages Personal Blog Setup Guide</h1>
+          <p class="article-meta">Static blog · Bilingual pages · No build tool required</p>
+        </header>
+
+        <h2>1. Create the repository</h2>
+        <p>For a personal site, name the repository <code>your-github-username.github.io</code>. For example, if your username is <code>georgezhong10-cmyk</code>, use <code>georgezhong10-cmyk.github.io</code>.</p>
+
+        <h2>2. Initialize and push the code</h2>
+        <pre><code>git init
+git add .
+git commit -m "Create bilingual GitHub Pages blog"
+git branch -M main
+git remote add origin https://github.com/your-github-username/your-github-username.github.io.git
+git push -u origin main</code></pre>
+
+        <h2>3. Enable GitHub Pages</h2>
+        <ol>
+          <li>Open the repository on GitHub and go to <strong>Settings</strong>.</li>
+          <li>Open <strong>Pages</strong> from the sidebar.</li>
+          <li>Under <strong>Build and deployment</strong>, choose <strong>Deploy from a branch</strong>.</li>
+          <li>Select <code>main</code> as the branch and <code>/root</code> as the folder.</li>
+          <li>Save and wait for GitHub to publish the site.</li>
+        </ol>
+
+        <h2>4. Replace personal details</h2>
+        <p>Start with <code>index.html</code>, <code>en/index.html</code>, the two sample posts, <code>_config.yml</code>, <code>robots.txt</code>, and <code>sitemap.xml</code>. Replace the title, bio, GitHub handle, production URL, and post content.</p>
+
+        <h2>5. Write a new post</h2>
+        <p>Copy <code>posts/zh/hello-github-pages.html</code> or <code>posts/en/hello-github-pages.html</code>, rename it, update the title, date, body, and language-switch link, then add the post to the home page and archive.</p>
+
+        <h2>6. Optional custom domain</h2>
+        <p>If you own a domain, create a root-level <code>CNAME</code> file containing only that domain. Add a DNS CNAME record pointing to <code>your-github-username.github.io</code>, then configure the custom domain in <strong>Settings → Pages</strong> and enable HTTPS.</p>
+
+        <h2>7. Optional local preview</h2>
+        <pre><code>python3 -m http.server 8000</code></pre>
+        <p>Then open <code>http://localhost:8000</code>.</p>
+
+        <div class="article-callout">
+          <strong>Tip:</strong> If styles do not load after publishing, check asset paths and Pages branch settings. A <code>username.github.io</code> repository keeps paths simplest.
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="../en/">Back home</a> · <a href="./GITHUB_PAGES_GUIDE.md">Markdown version</a></p>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

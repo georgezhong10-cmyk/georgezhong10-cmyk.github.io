@@ -1,0 +1,9 @@
+.DS_Store
+.permission_check_hidden/
+.git-test/
+temp-repo-check/
+test_git_permission_check/
+output/
+georgezhong10/
+git-data/
+.git-test-file

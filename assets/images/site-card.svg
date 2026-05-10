@@ -1,0 +1,13 @@
+<svg width="920" height="680" viewBox="0 0 920 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="920" height="680" rx="48" fill="#17202A"/>
+  <circle cx="182" cy="132" r="168" fill="#B84C2F" fill-opacity=".34"/>
+  <circle cx="730" cy="492" r="240" fill="#176B67" fill-opacity=".42"/>
+  <path d="M128 462C223 333 317 283 410 312C503 341 591 284 674 141" stroke="#FFD596" stroke-width="18" stroke-linecap="round"/>
+  <path d="M156 526H762" stroke="#FFF8ED" stroke-opacity=".16" stroke-width="18" stroke-linecap="round"/>
+  <path d="M156 580H610" stroke="#FFF8ED" stroke-opacity=".12" stroke-width="18" stroke-linecap="round"/>
+  <rect x="116" y="96" width="318" height="162" rx="28" fill="#FFF8ED" fill-opacity=".08" stroke="#FFF8ED" stroke-opacity=".18"/>
+  <rect x="486" y="300" width="296" height="122" rx="28" fill="#FFF8ED" fill-opacity=".08" stroke="#FFF8ED" stroke-opacity=".18"/>
+  <text x="144" y="166" fill="#FFF8ED" font-family="Georgia, serif" font-size="44" font-weight="700">systems</text>
+  <text x="144" y="216" fill="#FFD596" font-family="Avenir Next, sans-serif" font-size="22" letter-spacing="4">MEASURE FIRST</text>
+  <text x="516" y="370" fill="#FFF8ED" font-family="Georgia, serif" font-size="38" font-weight="700">fast paths</text>
+</svg>

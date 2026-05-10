@@ -1,0 +1,63 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="0.45" stop-color="#123A45"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="line" x1="240" y1="80" x2="1180" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#FBBF24"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1400" height="420" rx="28" fill="url(#grid)"/>
+
+  <g opacity="0.24">
+    <circle cx="1160" cy="86" r="132" stroke="#67E8F9"/>
+    <circle cx="1160" cy="86" r="84" stroke="#A7F3D0"/>
+    <circle cx="192" cy="334" r="120" stroke="#FDE68A"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="74" width="520" height="272" rx="18" fill="#020617" fill-opacity="0.72" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <rect x="92" y="74" width="520" height="42" rx="18" fill="#111827"/>
+    <circle cx="122" cy="95" r="6" fill="#F87171"/>
+    <circle cx="146" cy="95" r="6" fill="#FBBF24"/>
+    <circle cx="170" cy="95" r="6" fill="#34D399"/>
+    <text x="122" y="154" fill="#A7F3D0" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="22" letter-spacing="0">$ profile --focus</text>
+    <text x="122" y="194" fill="#E5E7EB" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="22" letter-spacing="0">llm.infra = serving + scale</text>
+    <text x="122" y="234" fill="#E5E7EB" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="22" letter-spacing="0">latency.p99 --&gt; measured</text>
+    <text x="122" y="274" fill="#E5E7EB" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="22" letter-spacing="0">kernels.optimize(memory)</text>
+    <text x="122" y="314" fill="#67E8F9" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="22" letter-spacing="0">status: building in public</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="690" y="74" width="618" height="272" rx="18" fill="#020617" fill-opacity="0.58" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <path d="M736 288C796 192 858 242 914 168C980 82 1048 160 1098 124C1168 74 1234 118 1270 182" stroke="url(#line)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M736 288C796 192 858 242 914 168C980 82 1048 160 1098 124C1168 74 1234 118 1270 182" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+    <rect x="736" y="278" width="80" height="12" rx="6" fill="#38BDF8" fill-opacity="0.5"/>
+    <rect x="838" y="232" width="80" height="12" rx="6" fill="#34D399" fill-opacity="0.5"/>
+    <rect x="940" y="178" width="80" height="12" rx="6" fill="#FBBF24" fill-opacity="0.5"/>
+    <rect x="1042" y="132" width="80" height="12" rx="6" fill="#38BDF8" fill-opacity="0.5"/>
+    <rect x="1144" y="154" width="80" height="12" rx="6" fill="#34D399" fill-opacity="0.5"/>
+  </g>
+
+  <text x="690" y="168" fill="#BAE6FD" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="26" font-weight="700" letter-spacing="0">
+    LLM INFRASTRUCTURE
+  </text>
+  <text x="690" y="230" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="78" font-weight="800" letter-spacing="0">
+    george
+  </text>
+  <text x="694" y="270" fill="#D1FAE5" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="25" font-weight="600" letter-spacing="0">
+    inference systems / performance / tooling
+  </text>
+</svg>

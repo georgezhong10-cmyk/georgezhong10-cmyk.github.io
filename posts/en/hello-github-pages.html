@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A complete guide to publishing a bilingual personal technical blog with GitHub Pages."
+    />
+    <title>Build a small technical blog with GitHub Pages | George</title>
+    <link rel="alternate" hreflang="zh-CN" href="../zh/hello-github-pages.html" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body class="page-body">
+    <nav class="site-nav compact" aria-label="Post navigation">
+      <a class="brand" href="../../en/">George</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        Menu
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="../../en/">Home</a>
+        <a href="../../archive/">Archive</a>
+        <a class="lang-switch" href="../zh/hello-github-pages.html">中文</a>
+      </div>
+    </nav>
+
+    <main class="article-shell">
+      <article class="article">
+        <header class="article-header">
+          <p class="eyebrow">GitHub Pages</p>
+          <h1>Build a small technical blog with GitHub Pages</h1>
+          <p class="article-meta">May 10, 2026 · Blogging · Static Site</p>
+        </header>
+
+        <p>
+          A personal technical blog does not need to start with a heavy framework. For early writing,
+          the important pieces are clear structure, stable publishing, and low maintenance cost.
+          GitHub Pages is a good fit: push HTML, CSS, images, and posts to a repository, then enable
+          Pages from the repository settings.
+        </p>
+
+        <h2>What this blog includes</h2>
+        <p>
+          This project contains a Chinese home page, an English home page, an archive, bilingual sample
+          posts, shared styles, a small navigation script, and deployment guides. You can replace the
+          biography, GitHub handle, email, post titles, and post content with your own details.
+        </p>
+
+        <h2>Recommended structure</h2>
+        <pre><code>.
+├── index.html
+├── en/
+├── archive/
+├── posts/
+├── assets/
+├── docs/
+├── _config.yml
+└── .nojekyll</code></pre>
+
+        <h2>Publishing steps</h2>
+        <ol>
+          <li>Create a GitHub repository. For a personal site, use <code>your-username.github.io</code>.</li>
+          <li>Push every file in this project to the repository's <code>main</code> branch.</li>
+          <li>Open <strong>Settings → Pages</strong> in the repository.</li>
+          <li>Under <strong>Build and deployment</strong>, choose <strong>Deploy from a branch</strong>.</li>
+          <li>Select <code>main</code> as the branch and <code>/root</code> as the folder, then save.</li>
+          <li>Wait for GitHub to publish the site, then visit <code>https://your-username.github.io</code>.</li>
+        </ol>
+
+        <h2>Writing the next post</h2>
+        <p>
+          Copy this post file, update the title, date, body, and language-switch link, then add the new
+          entry to the home page and archive. If the blog grows, you can later migrate to Jekyll, Astro,
+          or Hugo. Until then, keeping the site simple makes writing easier.
+        </p>
+
+        <div class="article-callout">
+          <strong>A small rule:</strong> write three to five useful posts before adding comments,
+          advanced taxonomy, or a build pipeline. The scarce resource is not tooling. It is clear,
+          durable writing.
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="../../en/">Back home</a> · <a href="../../docs/GITHUB_PAGES_GUIDE.html">Read the full setup guide</a></p>
+    </footer>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="GitHub Pages 个人博客中英文部署指南。" />
+    <title>GitHub Pages 个人博客部署指南 | George</title>
+    <link rel="alternate" hreflang="en" href="./GITHUB_PAGES_GUIDE.html" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body class="page-body">
+    <nav class="site-nav compact" aria-label="部署指南导航">
+      <a class="brand" href="../">George</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        Menu
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="../">首页</a>
+        <a href="../archive/">归档</a>
+        <a class="lang-switch" href="./GITHUB_PAGES_GUIDE.html">English</a>
+      </div>
+    </nav>
+
+    <main class="article-shell">
+      <article class="article">
+        <header class="article-header">
+          <p class="eyebrow">Setup Guide</p>
+          <h1>GitHub Pages 个人博客部署指南</h1>
+          <p class="article-meta">静态博客 · 中英文版本 · 无需构建工具</p>
+        </header>
+
+        <h2>1. 创建仓库</h2>
+        <p>个人主页推荐仓库名为 <code>你的 GitHub 用户名.github.io</code>。例如用户名是 <code>georgezhong10-cmyk</code>，仓库名就是 <code>georgezhong10-cmyk.github.io</code>。</p>
+
+        <h2>2. 初始化并推送代码</h2>
+        <pre><code>git init
+git add .
+git commit -m "Create bilingual GitHub Pages blog"
+git branch -M main
+git remote add origin https://github.com/你的用户名/你的用户名.github.io.git
+git push -u origin main</code></pre>
+
+        <h2>3. 开启 GitHub Pages</h2>
+        <ol>
+          <li>进入 GitHub 仓库页面，打开 <strong>Settings</strong>。</li>
+          <li>点击左侧 <strong>Pages</strong>。</li>
+          <li><strong>Build and deployment</strong> 选择 <strong>Deploy from a branch</strong>。</li>
+          <li><strong>Branch</strong> 选择 <code>main</code>，目录选择 <code>/root</code>。</li>
+          <li>点击 <strong>Save</strong>，等待 GitHub 发布完成。</li>
+        </ol>
+
+        <h2>4. 替换个人信息</h2>
+        <p>优先修改 <code>index.html</code>、<code>en/index.html</code>、两篇示例文章、<code>_config.yml</code>、<code>robots.txt</code> 和 <code>sitemap.xml</code>。把标题、简介、GitHub 用户名、站点地址和文章内容换成你的真实信息。</p>
+
+        <h2>5. 写新文章</h2>
+        <p>复制 <code>posts/zh/hello-github-pages.html</code> 或 <code>posts/en/hello-github-pages.html</code>，改文件名、标题、日期、正文和语言切换链接，然后在首页与归档页增加入口。</p>
+
+        <h2>6. 自定义域名，可选</h2>
+        <p>如果你有自己的域名，在根目录新建 <code>CNAME</code> 文件，内容只写域名；然后在 DNS 中添加 CNAME 记录指向 <code>你的用户名.github.io</code>，最后到 <strong>Settings → Pages</strong> 填写 custom domain 并启用 HTTPS。</p>
+
+        <h2>7. 本地预览，可选</h2>
+        <pre><code>python3 -m http.server 8000</code></pre>
+        <p>然后访问 <code>http://localhost:8000</code>。</p>
+
+        <div class="article-callout">
+          <strong>提示：</strong>如果发布后样式没加载，通常是路径或 Pages 分支设置问题。个人主页仓库使用 <code>用户名.github.io</code> 会让路径最简单。
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="../">返回首页</a> · <a href="./GITHUB_PAGES_GUIDE.md">Markdown 版</a></p>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
