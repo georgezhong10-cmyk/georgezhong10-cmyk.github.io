@@ -43,31 +43,25 @@
 [截图：浏览器打开 chatgpt.com 首页]
 ```
 
-### 2.2 本地开发环境
+### 2.2 Google邮箱注册
 
-如果需要使用 Codex CLI，建议提前安装：
+科学上网务必选取美国站点，这样就不要验证手机号，务必注意⚠️⚠️⚠️：
 
-| 工具 | 用途 | 检查命令 | 备注 |
-| --- | --- | --- | --- |
-| Git | 管理代码仓库 | `git --version` | 推荐先熟悉 `clone`、`status`、`commit` |
-| Node.js | 安装 Codex CLI | `node -v` | 建议使用当前长期支持版本或官方推荐版本 |
-| npm | 安装命令行工具 | `npm -v` | 通常会随 Node.js 一起安装 |
-| 代码编辑器 | 查看和编辑项目 | 不适用 | VS Code、Cursor、Windsurf 等均可 |
+流程截图如下：
 
-检查示例：
+![Google 邮箱注册：填写姓名](../assets/images/chatgpt-codex-wiki/google-signup-01-name.png)
 
-```bash
-git --version
-node -v
-npm -v
-```
+![Google 邮箱注册：进入生日和性别页面](../assets/images/chatgpt-codex-wiki/google-signup-02-basic-info-empty.png)
 
-预期结果：
+![Google 邮箱注册：填写生日和性别](../assets/images/chatgpt-codex-wiki/google-signup-03-basic-info-filled.png)
 
-```text
-能够看到版本号，说明对应工具已经安装。
-如果提示 command not found，需要先安装对应工具。
-```
+![Google 邮箱注册：填写 Gmail 地址](../assets/images/chatgpt-codex-wiki/google-signup-04-username-first.png)
+
+![Google 邮箱注册：确认 Gmail 地址](../assets/images/chatgpt-codex-wiki/google-signup-05-username-final.png)
+
+![Google 邮箱注册：设置密码](../assets/images/chatgpt-codex-wiki/google-signup-06-password.png)
+
+![Google 邮箱注册：验证账号创建信息](../assets/images/chatgpt-codex-wiki/google-signup-07-verification.png)
 
 ## 3. 注册 ChatGPT 账号
 
